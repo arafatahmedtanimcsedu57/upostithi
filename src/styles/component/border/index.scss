@@ -1,0 +1,37 @@
+@import "./widths";
+@import "./styles";
+@import "./colors";
+
+@each $i in $border_widths {
+  .border {
+    &-#{nth($i, 1)} {
+      border-width: nth($i, 2);
+
+      @each $j in $border_styles {
+        &-#{nth($j, 1)} {
+          border-style: nth($j, 2);
+
+          @each $k in $border_colors {
+            &-#{nth($k, 1)} {
+              border-color: nth($k, 2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@for $j from 0 to 100 {
+  .border-r {
+    &-#{$j} {
+      border-radius: $j * 1px;
+    }
+  }
+}
+
+.btn {
+  &:focus {
+    box-shadow: none !important;
+  }
+}

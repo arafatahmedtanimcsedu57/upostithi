@@ -1,0 +1,10 @@
+@keyframes slide-bottom-top {
+  @for $i from 0 through 90 {
+    #{$i * 1%} {
+      top: 100vh - $i;
+    }
+  }
+  100% {
+    top: inherit;
+  }
+}

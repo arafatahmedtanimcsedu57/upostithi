@@ -1,0 +1,39 @@
+@import "./weights";
+
+@each $i in $font_weights {
+  .fw {
+    &-#{nth($i, 1)} {
+      font-weight: nth($i, 2);
+    }
+  }
+}
+
+@for $j from 8 to 50 {
+  .fs {
+    &-#{$j} {
+      font-size: $j * 1px;
+
+      @include media-breakpoint-up(md) {
+        font-size: ($j * 1px) + (($j / 8) * 1px);
+      }
+    }
+  }
+  .lh {
+    &-#{$j} {
+      line-height: $j * 1px;
+
+      @include media-breakpoint-up(md) {
+        line-height: ($j * 1px) + (($j / 8) * 1px);
+      }
+    }
+  }
+  .ls {
+    &-#{$j} {
+      line-height: ($j/2) * 1px;
+
+      @include media-breakpoint-up(md) {
+        line-height: (($j/2) * 1px) + (($j / 16) * 1px);
+      }
+    }
+  }
+}

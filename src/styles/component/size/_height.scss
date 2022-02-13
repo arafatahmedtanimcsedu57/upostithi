@@ -1,0 +1,22 @@
+.h {
+  &-scrollable {
+    &-full {
+      height: calc(100vh - 120px);
+    }
+  }
+
+  &-full {
+    height: calc(100vh - 190px);
+    overflow: auto;
+  }
+
+  &-card {
+    height: calc(100vh - 730px);
+  }
+
+  &-100 {
+    &-nb {
+      height: calc(100vh - 61px);
+    }
+  }
+}

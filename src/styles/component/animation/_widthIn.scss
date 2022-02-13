@@ -1,0 +1,7 @@
+@keyframes widthIn {
+  @for $i from 0 through 100 {
+    #{$i * 1%} {
+      width: $i * 1%;
+    }
+  }
+}

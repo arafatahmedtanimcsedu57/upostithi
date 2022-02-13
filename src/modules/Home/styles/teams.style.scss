@@ -1,0 +1,9 @@
+#team-list {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  #team {
+    cursor: pointer;
+    box-shadow: 0px 6px 6px rgba(13, 46, 97, 0.05);
+  }
+}

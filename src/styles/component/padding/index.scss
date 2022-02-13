@@ -1,0 +1,45 @@
+@for $i from 0 to 70 {
+  .pad {
+    &-#{$i} {
+      padding: $i * 1px !important ;
+    }
+  }
+
+  .pad-l {
+    &-#{$i} {
+      padding-left: $i * 1px !important;
+    }
+  }
+
+  .pad-r {
+    &-#{$i} {
+      padding-right: $i * 1px !important;
+    }
+  }
+
+  .pad-t {
+    &-#{$i} {
+      padding-top: $i * 1px !important;
+    }
+  }
+
+  .pad-b {
+    &-#{$i} {
+      padding-bottom: $i * 1px !important;
+    }
+  }
+
+  .pad-x {
+    &-#{$i} {
+      padding-left: $i * 1px !important;
+      padding-right: $i * 1px !important;
+    }
+  }
+
+  .pad-y {
+    &-#{$i} {
+      padding-top: $i * 1px !important;
+      padding-bottom: $i * 1px !important;
+    }
+  }
+}

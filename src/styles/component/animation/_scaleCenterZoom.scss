@@ -1,0 +1,7 @@
+@keyframes scale-in-center {
+  @for $i from 0 through 100 {
+    #{$i * 1%} {
+      transform: scale($i / 100);
+    }
+  }
+}

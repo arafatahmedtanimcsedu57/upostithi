@@ -1,0 +1,9 @@
+@import "./colors";
+
+@each $i in $text_colors {
+  .text {
+    &-#{nth($i, 1)} {
+      color: nth($i, 2);
+    }
+  }
+}

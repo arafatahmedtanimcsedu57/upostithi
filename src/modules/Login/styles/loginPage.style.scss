@@ -1,0 +1,17 @@
+#login-layout {
+  height: 100vh;
+}
+
+#login-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 8px 2px rgb(232, 242, 255);
+  padding: 24px;
+  max-width: 850px;
+}

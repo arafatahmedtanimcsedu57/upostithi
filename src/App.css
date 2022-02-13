@@ -2,37 +2,47 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.network-info {
+  color: rgb(61, 61, 61);
+  padding: 16px 24px 16px 24px;
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  z-index: 10;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgb(97, 97, 97);
+  min-width: 250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-img {
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+
+  margin-right: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leaflet-tooltip {
+  color: aliceblue !important;
+  background-color: #05476d !important;
+  border-radius: 100px !important;
+  border: none !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.leaflet-tooltip-top:before {
+  border-top-color: #05476d !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signout {
+  margin: 16px 0px 0px 0px;
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(66, 66, 66);
 }
